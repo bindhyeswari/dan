@@ -33,10 +33,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dataextract.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="dataextract.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataextract.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40871936" vertical-offset="0" max-vertical-offset="367">
+            <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="300">
               <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
@@ -55,6 +55,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="tmdb.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tmdb.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.28610355" vertical-offset="0" max-vertical-offset="367">
+              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="10" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -68,6 +78,7 @@
         <option value="$PROJECT_DIR$/carousel.html" />
         <option value="$PROJECT_DIR$/dataextract.js" />
         <option value="$PROJECT_DIR$/dataextract.html" />
+        <option value="$PROJECT_DIR$/tmdb.html" />
       </list>
     </option>
   </component>
@@ -194,6 +205,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dataextract.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="300">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dataextract.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
@@ -204,10 +223,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataextract.html">
+    <entry file="file://$PROJECT_DIR$/tmdb.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40871936" vertical-offset="0" max-vertical-offset="367">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.28610355" vertical-offset="0" max-vertical-offset="367">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="10" selection-end-column="61" />
           <folding />
         </state>
       </provider>
