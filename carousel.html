@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            font: 300 1em 'Helvetica Neue';
+
+        }
+        ul {
+            list-style-type: none;
+            width: 600px;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            height: 200px;
+            width: 200px;
+            background-color: #eee;
+            float: left;
+        }
+        li:nth-child(2n){
+            background-color: #ccc;
+        }
+        div.carousel {
+            overflow: hidden;
+            width: 200px;
+            height: 200px;
+            border: 1px solid #999;
+        }
+    </style>
+    <script>
+        window.onload = function (){
+            var btn = document.getElementsByTagName('button')[0];
+            var w = 0;
+            btn.onclick = function () {
+                var div = document.getElementsByClassName('carousel')[0];
+
+                var finalPos = w + 200;
+
+                var intervalID = setInterval(function (){
+                    w++;
+                    if ( w <= finalPos )
+                        div.scrollLeft = w;
+                    else
+                        clearInterval(intervalID);
+                }, 1)
+            };
+        };
+    </script>
+</head>
+<body>
+    <div class="carousel">
+        <ul>
+            <li>
+                Slide 1
+            </li>
+            <li>
+                Slide 2
+            </li>
+            <li>
+                Slide 3
+            </li>
+        </ul>
+    </div>
+    <button>Next</button>
+</body>
+</html>
