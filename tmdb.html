@@ -3,16 +3,76 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <style>
+        /*
+            css tricks .com
+            w3schools - tags
+            w3 org - read specs
+        */
+        #ball{
+            border-radius: 40px;
+            height: 80px;
+            width: 80px;
+            background-color: #eee;
+            position: absolute;
+            top: 100px;
+        }
+        #floor{
+            position: absolute;
+            background-color: darkred;
+            top: 280px;
+            width: 100%;
+            height: 10px;
+        }
+    </style>
     <script>
+        document.addEventListener('DOMContentLoaded', function (){
+            // console.log('Hello World!');
+            var ball = document.getElementById('ball');
+            var upwards = false;
+            var height = 10;
+            ball.style.top = height + 'px';
 
-        // input box to search for an actor
-        // http://api.jquery.com/jquery.getjson/
-        // http://www.themoviedb.org/documentation/api/faq
-        // Example: https://github.com/sdbui/tmdb_movieSearch
+            var bottom = 200;
+            var top = 10;
 
+            var intervalid = setInterval(function (){
+
+                // check if the ball is going downwards
+                // if going downwards - check for bottomn
+                // change direction
+                // change the height to which it goes up
+
+                if (upwards) {
+                    height = height - 10;
+                    if (height < top) {
+                        upwards = false;
+                    } else {
+                        ball.style.top = height + 'px';
+                    }
+
+                } else {
+                    height = height + 10;
+                    if (height > bottom) {
+                        upwards = true;
+                        top = top + 20;
+                        if (top > bottom) {
+                            clearInterval(intervalid);
+                        }
+                    } else {
+                        ball.style.top = height + 'px';
+                    }
+                }
+
+
+            }, 0.5)
+
+        });
     </script>
 </head>
 <body>
 
+<div id="ball"></div>
+<div id="floor"></div>
 </body>
 </html>

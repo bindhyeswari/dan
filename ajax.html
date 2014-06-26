@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+
+        // references - https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
+
+
+        // create an XMLHTTPRequest object - xhr
+        // open the xhr
+        // have an event handler to handle the state of request
+        // send the request
+
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'http://restcountries.eu/rest/v1/region/africa');
+        xhr.onreadystatechange = function (){
+            if (xhr.readyState === 4) {
+                var obj = JSON.parse(xhr.responseText);
+                console.log(obj[0]);
+            }
+        };
+        xhr.send();
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
