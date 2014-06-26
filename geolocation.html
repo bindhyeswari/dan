@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Geolocation</title>
+    <script>
+
+        // reference - http://dev.w3.org/geo/api/spec-source.html
+
+        // pick the current positon and print it out
+
+
+
+        navigator.geolocation.getCurrentPosition(function(data) {
+            console.log('asdf');
+            addDivToBody(data.position);
+        });
+
+
+        // keep firing the current position
+
+        var id = navigator.geolocation.watchPosition(function(data){
+            // code here will fire repeatedly
+            setTimeout(function (){
+                navigator.geolocation.clearWatch(id);
+            }, 1200000)
+        });
+
+        navigator.geolocation.clearWatch(id);
+
+
+
+        function addDivToBody(data){
+            var div = document.createElement('div');
+            div.innerHTML = data;
+            document.body.appendChild(div);
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
