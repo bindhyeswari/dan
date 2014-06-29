@@ -9,6 +9,14 @@
             padding: 10em;
 
         }
+
+        #test {
+            background-color: red;
+        }
+
+        div > div > span > ul > li {
+            background-color: greenyellow;
+        }
     </style>
     <script>
 
@@ -20,7 +28,7 @@
         // have an event handler to handle the state of request
         // send the request
 
-        var xhr = new XMLHttpRequest();
+        /*var xhr = new XMLHttpRequest();
         xhr.open('GET', 'http://restcountries.eu/rest/v1/region/africa');
         xhr.onreadystatechange = function (){
             if (xhr.readyState === 4) {
@@ -28,15 +36,33 @@
                 console.log(obj[0]);
             }
         };
-        xhr.send();
+        xhr.send();*/
 
 
-
+        document.addEventListener('DOMContentLoaded', function (){
+            var div = document.getElementById('test');
+            console.log(div.childElementCount);
+            console.log(document.querySelector('div > div > span > ul > li').innerHTML = 'changed via query selector');
+        });
 
 
     </script>
 </head>
 <body>
+    <div>
+        <div>
+            <span>
+                <ul>
+                    <li>
+                        sdfasdfasdf
+                    </li>
+                </ul>
+            </span>
+        </div>
+    </div>
+    <div id="test">
+        <span>asdf</span>
+    </div>
     <div style="margin-bottom: 10em;">
         <a href="#tunisia">Tunisia</a>
         For the Wikipedia page designed for testing and experimenting, see Wikipedia:Sandbox
